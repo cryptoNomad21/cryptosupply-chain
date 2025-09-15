@@ -99,6 +99,7 @@ NEXT_PUBLIC_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
 1. Check the build logs in Vercel dashboard
 2. Ensure all dependencies are properly installed
 3. Verify TypeScript compilation errors
+4. **Fixed Issue**: Removed `@walletconnect/modal` dependency as it was causing version conflicts. RainbowKit provides all necessary wallet connection functionality.
 
 ### Runtime Errors
 
@@ -111,6 +112,12 @@ NEXT_PUBLIC_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
 1. Verify RPC URL is accessible
 2. Check if Sepolia testnet is available
 3. Ensure WalletConnect project ID is valid
+
+### Common Issues Resolved
+
+- **Dependency Version Conflicts**: Updated package versions to compatible ones
+- **Lovable Dependencies**: Completely removed all Lovable-related dependencies
+- **Build Configuration**: Fixed vite.config.ts to remove lovable-tagger references
 
 ## Performance Optimization
 
