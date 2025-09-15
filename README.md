@@ -54,8 +54,8 @@ npm run dev
 The application uses the following configuration:
 
 - **Chain**: Sepolia testnet (Chain ID: 11155111)
-- **RPC URL**: https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
-- **Wallet Connect Project ID**: 2ec9743d0d0cd7fb94dee1a7e6d33475
+- **RPC URL**: Configure via VITE_RPC_URL environment variable
+- **Wallet Connect Project ID**: Configure via VITE_WALLET_CONNECT_PROJECT_ID environment variable
 
 ## Smart Contract
 
@@ -73,10 +73,10 @@ The smart contract (`CryptoSupplyChain.sol`) provides:
 
 1. Connect your GitHub repository to Vercel
 2. Set the following environment variables:
-   - `NEXT_PUBLIC_CHAIN_ID=11155111`
-   - `NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990`
-   - `NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=2ec9743d0d0cd7fb94dee1a7e6d33475`
-   - `NEXT_PUBLIC_CONTRACT_ADDRESS=<deployed_contract_address>`
+   - `VITE_CHAIN_ID=11155111`
+   - `VITE_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY`
+   - `VITE_WALLET_CONNECT_PROJECT_ID=YOUR_WALLET_CONNECT_PROJECT_ID`
+   - `VITE_CONTRACT_ADDRESS=<deployed_contract_address>`
 
 3. Deploy the application
 

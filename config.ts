@@ -1,16 +1,16 @@
 // Environment configuration for Crypto Supply Chain
 export const config = {
   // Chain Configuration
-  chainId: 11155111, // Sepolia
-  rpcUrl: 'https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990',
+  chainId: parseInt(import.meta.env.VITE_CHAIN_ID || '11155111'), // Sepolia
+  rpcUrl: import.meta.env.VITE_RPC_URL || 'https://sepolia.infura.io/v3/YOUR_INFURA_KEY',
   
   // Wallet Connect Configuration
-  walletConnectProjectId: '2ec9743d0d0cd7fb94dee1a7e6d33475',
+  walletConnectProjectId: import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID || 'YOUR_WALLET_CONNECT_PROJECT_ID',
   
   // Infura Configuration
-  infuraApiKey: 'b18fb7e6ca7045ac83c41157ab93f990',
+  infuraApiKey: import.meta.env.VITE_INFURA_API_KEY || 'YOUR_INFURA_API_KEY',
   alternativeRpcUrl: 'https://1rpc.io/sepolia',
   
   // Contract Configuration
-  contractAddress: '0x0000000000000000000000000000000000000000', // Will be updated after deployment
+  contractAddress: import.meta.env.VITE_CONTRACT_ADDRESS || '0x0000000000000000000000000000000000000000',
 } as const;

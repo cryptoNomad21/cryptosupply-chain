@@ -36,14 +36,17 @@ This guide provides step-by-step instructions for deploying the Crypto Supply Ch
 Click "Environment Variables" and add the following:
 
 ```
-NEXT_PUBLIC_CHAIN_ID=11155111
-NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=2ec9743d0d0cd7fb94dee1a7e6d33475
-NEXT_PUBLIC_INFURA_API_KEY=b18fb7e6ca7045ac83c41157ab93f990
-NEXT_PUBLIC_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
+VITE_CHAIN_ID=11155111
+VITE_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY
+VITE_WALLET_CONNECT_PROJECT_ID=YOUR_WALLET_CONNECT_PROJECT_ID
+VITE_INFURA_API_KEY=YOUR_INFURA_API_KEY
+VITE_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
 ```
 
-**Note**: Update `NEXT_PUBLIC_CONTRACT_ADDRESS` with the actual deployed contract address after smart contract deployment.
+**Note**: 
+- Replace `YOUR_INFURA_KEY` with your actual Infura API key
+- Replace `YOUR_WALLET_CONNECT_PROJECT_ID` with your actual WalletConnect project ID
+- Update `VITE_CONTRACT_ADDRESS` with the actual deployed contract address after smart contract deployment
 
 ### 5. Deploy
 
@@ -86,11 +89,11 @@ NEXT_PUBLIC_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
 
 | Variable | Value | Description |
 |----------|-------|-------------|
-| `NEXT_PUBLIC_CHAIN_ID` | `11155111` | Sepolia testnet chain ID |
-| `NEXT_PUBLIC_RPC_URL` | `https://sepolia.infura.io/v3/...` | RPC endpoint for Sepolia |
-| `NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID` | `2ec9743d0d0cd7fb94dee1a7e6d33475` | WalletConnect project ID |
-| `NEXT_PUBLIC_INFURA_API_KEY` | `b18fb7e6ca7045ac83c41157ab93f990` | Infura API key |
-| `NEXT_PUBLIC_CONTRACT_ADDRESS` | `0x...` | Deployed smart contract address |
+| `VITE_CHAIN_ID` | `11155111` | Sepolia testnet chain ID |
+| `VITE_RPC_URL` | `https://sepolia.infura.io/v3/YOUR_INFURA_KEY` | RPC endpoint for Sepolia |
+| `VITE_WALLET_CONNECT_PROJECT_ID` | `YOUR_WALLET_CONNECT_PROJECT_ID` | WalletConnect project ID |
+| `VITE_INFURA_API_KEY` | `YOUR_INFURA_API_KEY` | Infura API key |
+| `VITE_CONTRACT_ADDRESS` | `0x...` | Deployed smart contract address |
 
 ## Troubleshooting
 
